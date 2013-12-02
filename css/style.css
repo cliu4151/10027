@@ -1,0 +1,25 @@
+body {	
+     font-size: 12px; font-family: helvetica, sans-serif; color: #666;
+     margin: 10px;
+     padding-top: 15px;
+     min-height: 0;
+}
+
+input{	
+ line-height:normal;
+}
+
+#myTable tr:hover td
+{ 
+  background-color:#e5eecc;
+}
+
+#tableInput, #mytable{
+ font: 10px Arial, Helvetica, sans-serif;
+ text-transform: uppercase;
+ width: 100%;
+ padding: 0;
+ margin: 10px;;
+ border-top: 1px solid #ebebeb;
+ width: 100%;
+}

@@ -1,0 +1,46 @@
+<div>
+  <p style="font-size:12px;">
+    Search Restaurant:  &nbsp;
+  <input type="text" ng-model="query.DBA">
+  
+ &nbsp; &nbsp; &nbsp; <strong>OR</strong>&nbsp; &nbsp; &nbsp; 
+  
+  Search All:  &nbsp;
+  <input type="text" ng-model="query">
+  </p>
+  
+  <table id="mytable" cellspacing="0" class="table">
+    <tbody>
+      <tr>
+        
+        <th abbr="DBA">
+          Restaurant</th>
+        <th abbr="Building">
+          Building</th>
+        <th abbr="Street">
+          Street</th>
+        <th abbr="Zip">
+          Zip</th>
+        <th abbr="Phone">
+          Phone</th>
+      </tr>
+      
+      <!--iterate through myData-->
+      <!--setup filter by input query-->
+      <tr ng-repeat="i in myData | filter:query | orderBy:'DBA'">
+	
+        <th abbr="DBA">
+	  <a href="#/v2/{{i.CAMIS}}"> {{i.DBA}}</a></th>
+        <td abbr="Building">
+          {{i.BUILDING}}</td>
+        <td abbr="Street">
+          {{i.STREET}}</td>
+        <td abbr="Zip">
+          {{i.ZIPCODE}}</td>
+        <td abbr="Phone">
+          {{i.PHONE}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

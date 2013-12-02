@@ -1,0 +1,35 @@
+<div>
+  
+  <h4>Violations for {{ c.DBA }}</h4>
+  <p style="font-size:12px;">  Search:  <input type="text" ng-model="query"></p>
+        <table id="mytable" cellspacing="0" class="table">
+          <tbody>
+            <tr>
+              <th abbr="ViolCode">
+                Violation Code</th>
+              <th abbr="ViolDesc">
+                Violation Description</th>
+              <th abbr="GradeInsp">
+                Grade (If Any) On Insp. Date</th>
+	      <th abbr="InspDate">
+                Inspection Date</th>
+	    </tr>
+
+            <!--iterate through myData-->
+            <!--setup filter by input query-->
+            <tr ng-repeat="i in sData | filter:query | orderBy:'INSPDATE':true">
+
+              <td abbr="ViolCode">
+                {{i.VIOLCODE}}</td>
+              <td abbr="ViolDesc">
+                {{i.VIOLDESC}}</td>
+              <td abbr="GradeInsp">
+                {{i.CURRENTGRADE}}</td>
+              <td abbr="InspDate">
+                {{i.INSPDATE}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+	<a href="#/v1">Back to 10027 Listing</a>
+</div>
