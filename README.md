@@ -11,9 +11,6 @@ This is a side project specifically for using these technologies:
 - Other: mysql and php
 
 Some of the code is not optimized because it really aims to utilize a number of features available in AngularJS.
-The full code for the project is provided so others may see how the project was put together.
-
-Here's a link to a live demo of the project: http://clstylings.com/10027
-
+The full code for the project is provided so others may see how the project was put together
 
 Future developments include extending the project to use google maps api.
